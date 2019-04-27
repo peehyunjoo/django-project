@@ -5,7 +5,7 @@ class ChoiceInline(admin.TabularInline):
         model = Choice
         extra = 2
 class QuestionAdmin(admin.ModelAdmin):
-        #fields = ['pub_date', 'question_text']  #í•„ë“œ ìˆœì„œë³€ê²½
+        #fields = ['pub_date', 'question_text']  #ÇÊµå ¼ø¼­º¯°æ
         fieldsets = [
             (None, {'fields': ['question_text']}),
             ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
